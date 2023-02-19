@@ -1,0 +1,44 @@
+.portfolio {
+    max-height: 410px;
+    background-color: #FFFFFF;
+ 
+
+        &__title {
+            margin-bottom: 47px;
+            padding-top: 48px;
+            font-weight: 700;
+            font-size: 24px;
+            color: #2F2F51;
+            text-align: center;
+
+
+            
+        }
+
+        &-examples {
+            display: flex;
+            justify-content:center;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 70px;
+
+                & > img{
+                    width: 214px;
+                    height: 214px;
+                    margin-right: 45px;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                    @media screen and (max-width: 992px){
+                        &:nth-child(4){
+                            display: none;
+                        }
+                        
+                    }    
+
+                }
+            
+        }
+
+}

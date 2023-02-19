@@ -1,0 +1,181 @@
+.about-company{
+
+    &__title{
+        text-align: center;
+        margin-top: 65px;
+        margin-bottom: 40px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #2F2F51;
+    }
+
+    &-navigation {    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+
+    .navigation-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+
+        &__item {
+            margin-right: 20px;
+            margin-bottom: 35px;
+
+            &__link {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color:#2F2F51;
+            border: 10px solid transparent;
+
+                &:hover {
+                    color: #FFFFFF;
+                    background-color:  #EF7F04;
+                    border:10px solid #EF7F04;
+                    border-radius: 3px;
+
+                }
+
+            }    
+        }
+    }
+
+    &-content {
+        display: flex; 
+        justify-content: center;
+        margin-bottom: 68px;
+       
+
+        @media screen and (max-width: 992px){
+            margin: auto;
+        }
+    }
+    .content-icon-text {
+        background-color: #FFFFFF;
+        width: 50%;
+        position: relative;
+        height: 461px;
+
+        @media screen and (max-width: 992px){
+            width: 35%;
+        }
+
+            &__logo {
+                position: absolute;
+                top: 46px;
+                left: 50px;
+
+            }
+
+            &__text {
+                position: absolute;
+                top: 247px;
+                left: 248px;
+                right: 52px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #000000;
+
+                @media screen and (max-width: 992px) {
+                    left: 108px;
+                    right: 52px;
+                }
+            }
+  
+    }
+    .content__img {
+        display: block;
+        width: 50%;
+        height: 100%;
+
+    }
+    
+// стилизуем блок с иконками //
+    .content-icon-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+
+        @media screen and (max-width: 992px){
+                max-width: 992px;
+                justify-content: center;      
+                margin: auto;
+        }
+
+
+        .block-icon {
+            display: flex;
+            margin-bottom: 100px;
+                &-width {
+                    @media screen and (max-width: 992px){
+                         width: 86px;
+                         height: 78px;
+                    }
+                }
+
+            @media screen and (max-width: 992px){
+                    width: 35%;
+                    margin-left: 142px;
+                    &:nth-child(1),&:nth-child(2) {
+                        margin-top: 80px;
+                    }
+
+                }
+            
+
+                &:nth-child(4),&:nth-child(5),&:nth-child(6){
+                    margin-bottom: 0;
+                    } 
+                
+
+                &__title-text {
+                   @include borders_title-text;
+
+                    &__title{
+                     @include title-about-icon;
+                    }
+
+                    &__text {
+                       @include  text-about-icon ;
+                    }
+                }
+        }
+
+        .block__button-request {
+            margin:80px auto 87px;
+            width: 312px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:#2F2F51;
+            border-radius: 3px;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+
+                &:hover {
+                     background: #EF7F1A;
+                }
+
+                &__text {
+                    margin-left: 23px;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+.Services-content-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2F2F51;
+  margin-bottom: 50px;
+}
+
+.services-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services-card-block-one {
+  width: 49%;
+  margin-bottom: 10px;
+  padding: 55px 0 45px 50px;
+  background: url(../images/Our_services-img/services-card-block-one.jpg);
+}
+.services-card-block-one_icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.services-card-block-one_title {
+  margin-left: 22px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2F2F51;
+  width: 223px;
+}
+.services-card-block-one_text {
+  width: 303px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2F2F51;
+}/*# sourceMappingURL=Our_services.css.map */

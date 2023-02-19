@@ -1,0 +1,50 @@
+.footer {
+    margin: 77px auto 0;
+    height: 146px;
+    min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    background-color: #2F2F51;
+    color: #FFFFFF;
+ 
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+                @media screen and (max-width: 992px){
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+
+                &__logo {
+                    display: flex;
+                    align-items: center;
+
+                        &>img {
+                            margin-right: 20px;
+                        }
+                        &>p {
+                            font-weight: 400;
+                            font-size: 16px;
+                        }
+        }
+
+        &-link {
+            display: flex;
+                &>a{
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    font-weight: 400;
+                    font-size: 14px;                    
+                }
+                .confidentiality {
+                    margin-right: 20px;
+                }
+
+              
+        }        
+    }
+
+
+}
