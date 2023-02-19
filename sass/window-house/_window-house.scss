@@ -1,0 +1,184 @@
+.main {
+    background-image: url(../sass/images/window-house-img/back_window-house.jpg);
+    background-repeat: no-repeat;
+    padding: 65px 0;
+    margin-bottom: 67px;
+    min-width: 1265px;
+    max-width: 1920px;
+    margin: 95px  auto;
+   // display: flex;
+    //justify-content: center;
+    //width: 100vw;
+
+    .main-wrapper {
+        display: flex;
+        justify-content: center;
+
+        .main__content {
+            color: #fff;
+            padding-top: 55px;
+    
+            &-title {
+                font-size: 36px;
+                font-weight: 100;
+                margin-bottom: 30px;
+                
+                &>span {
+                    color:#EF7F04 ;
+                    font-size: 24px;
+                    font-weight: 700;
+                    display: block;
+                }
+            }
+        }
+
+        .main__content-advanteges {
+            display: flex;
+            
+            .list__item {
+
+                &-icon {
+                    height: 80px;
+                    margin-bottom: 20px;
+                }
+                &-descr {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 18px;
+                    width: 165px;
+                    margin-right: 35px;
+                }
+            }
+
+        }
+
+        .main__content,
+        .main__form {
+            width: 50%;
+        }
+
+        .main__form {
+            position: relative;
+            &.main__form ,.form {
+            width: 406px;
+            height: 428px;
+            background-color: #fff;
+            border-radius:10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media screen and (max-width: 992px){
+                display: none;
+            }
+            
+                &__title {
+                    margin-top: 43px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    color: #2F2F51;
+                    text-align: center;
+                    margin-bottom: 27px;
+                }
+
+                &__input {
+                    width:322.5px ;
+                    height: 40px;
+                    margin-bottom: 15px;
+                    background: #E2E2E2;
+                    border-radius: 3px;
+                    border: none;
+                        &::-webkit-input-placeholder {
+                        color: #424268;
+                        }
+                        
+                }
+
+
+                &__button  {
+                    width: 199px;
+                    height: 54.5px;
+                    background: #EF7F04;
+                    border-radius: 3px;
+                    border: none;
+                    color: #FFFFFF ;
+                    font-weight: 700;
+                    font-size: 14px;
+                    cursor: pointer;
+                        &:hover{
+                            color: #2F2F51;
+                        }
+                }
+                
+                &-wrap {
+                    display: flex;
+                    margin-right: 40px;
+                    margin-left: 40px;
+                    margin-bottom: 30px;
+                    position: relative;
+
+                        &__checkbox-label {
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                            padding-left: 30px;
+
+                                &::before {
+                                    content: "";
+                                    display: block;
+                                    width: 25px;
+                                    height: 25px;
+                                    background-color:#E2E2E2;
+                                    border-radius: 3px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    z-index: 1;
+                                }
+
+                                &::after {
+                                    content: "";
+                                    display: block;
+                                    width: 25px;
+                                    height: 25px;
+                                    background: url("../sass/images/window-house-img/checkbox-img.svg");
+                                    background-repeat: no-repeat;
+                                    background-size: 25px 25px;
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: -5px;
+                                    left: 3px;
+                                    z-index: 2;
+                                }
+   
+                        }
+
+                        &__checkbox-input {
+                          -webkit-appearance: none; 
+                          position: absolute;
+                                &:checked+label {
+                                    &:after{
+                                        opacity: 1;
+                                    }
+                                }
+                        }
+
+                        &__checkbox__link {
+                            color: #4B67AF;
+                            text-decoration: none;
+                        }           
+                }
+       
+                &>img {
+                    position: absolute;
+                    left: -86px;
+                    bottom:-60px;
+                }
+                
+            }
+
+        }
+    }
+
+
+} 

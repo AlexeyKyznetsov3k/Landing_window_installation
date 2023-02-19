@@ -1,0 +1,113 @@
+.header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    height: 97px;
+    margin: 0 auto;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    background-color:  #FFFFFF;
+
+    &-content {
+        width:1200px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+            &__logo {
+
+                @media screen and (max-width: 992px){
+                    display: flex;
+                    align-items: center;
+                }
+                    .icon__menu {
+                        display: none;
+                        @media screen and (max-width: 992px){
+                            display: block;
+                            margin-left: 55px;
+                            margin-right: 45px;
+                        }
+                    }
+
+                    .icon__header {
+                        display: block;
+
+                    }
+                }
+            
+    }
+
+    &-navigation {
+        height: 100%;
+
+        @media screen and (max-width: 992px){
+            display: none;
+        }
+
+        &__list {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        &__list-item {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            margin: 0 10px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        &__list-item__link {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000000;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            border-top: 4px solid transparent;
+        
+                &:hover {
+                    color:#EF7F04 ;
+                    border-top: 4px solid #EF7F04;
+                }
+        }
+    }
+   
+    
+        
+    &-buttons {
+        display: flex;
+        align-items: center;
+        justify-content:space-between; 
+
+        @media screen and (max-width: 992px){
+            margin-right: 56px;
+        }
+
+        &__service-request, &__calculation { 
+            @include header-buttons-style ;
+            }
+
+        &__service-request:hover, &__calculation:hover {
+            background-color: #EF7F04;
+        }
+
+        
+    &__service-request__icon ,&__calculation__icon {
+        margin-right: 13px;
+    }
+
+    }
+}
